@@ -1,0 +1,61 @@
+// .authoriz {
+//   display: flex;
+//   gap: 30px;
+//   margin-left: auto;
+// }
+// .authoriz__link {
+//   @include NavAuthLink;
+// }
+// .authoriz__link {
+//   color: var(--text-color);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+// .authoriz__link + .authoriz__link {
+//   margin-left: 50px;
+// }
+
+// .authoriz svg {
+//   margin-right: 10px;
+// }
+// .authoriz__svg {
+//   fill: currentColor;
+// }
+
+header {
+  position: relative;
+}
+
+.authoriz {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+    margin-top: 306px;
+  }
+}
+.authoriz__link {
+  @include NavAuthLink;
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+    line-height: 1.18;
+    color: #2196f3;
+  }
+}
+
+.mail__link {
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+.authoriz__svg {
+  display: none;
+}

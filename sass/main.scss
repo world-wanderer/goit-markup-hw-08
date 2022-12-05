@@ -1,0 +1,23 @@
+// === Utils styles ===
+@import './utils/variables';
+@import './utils/placeholder';
+@import './utils/mixins';
+
+// === Base styles ===
+@import './base/reset';
+@import './base/base';
+@import './base/container';
+
+//  === Components ===
+@import './components/header';
+@import './components/mobile';
+@import './components/nav';
+@import './components/logo';
+@import './components/banner';
+@import './components/backdrop';
+@import './components/features';
+@import './components/work';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/portfolio-project';
