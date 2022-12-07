@@ -58,8 +58,13 @@
 
     @media screen and (min-width: 768px) {
       display: flex;
-      gap: 90px;
       flex-grow: 1;
+      justify-content: space-between;
+      padding: 27px 0 0 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 0;
     }
   }
 

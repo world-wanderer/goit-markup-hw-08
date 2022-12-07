@@ -1,9 +1,9 @@
 .work {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 
@@ -43,5 +43,9 @@
 
   .work .sub-title {
     @include SubTitle;
+  }
+
+  .work .list {
+    display: flex;
   }
 }

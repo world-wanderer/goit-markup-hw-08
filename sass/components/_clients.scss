@@ -1,3 +1,10 @@
+.clients {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients__list {
   display: flex;
   justify-content: center;
@@ -24,6 +31,10 @@
   &:focus svg {
     fill: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .clients__svg {
@@ -31,13 +42,3 @@
 
   transition: fill 250ms var(--timing-function);
 }
-
-// .clients {
-//   @extend %section;
-
-//   padding-top: 94px;
-// }
-
-// .clients__sub-title {
-//   @include SubTitle;
-// }

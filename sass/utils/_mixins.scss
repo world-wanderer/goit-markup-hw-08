@@ -19,8 +19,8 @@
     width: 768px;
   }
 
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
@@ -32,4 +32,8 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
