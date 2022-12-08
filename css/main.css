@@ -829,10 +829,20 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .features__sub-title {
+    text-align: center;
+  }
+}
 
 .features__text {
   font-size: 14px;
   line-height: 1.71;
+}
+@media screen and (max-width: 767px) {
+  .features__text {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -969,7 +979,7 @@ textarea {
   }
 }
 @media screen and (max-width: 767px) {
-  .team__item {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
