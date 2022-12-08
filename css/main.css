@@ -68,6 +68,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: auto;
+  }
+}
 
 .container {
   margin-left: auto;
@@ -105,7 +110,6 @@ header {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 32px;
-    margin-top: 306px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -117,8 +121,11 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 0;
-    margin-left: 92px;
+    margin-left: 82px;
     gap: 10px;
   }
 }
@@ -193,8 +200,10 @@ header {
   }
 }
 
-.authoriz__svg {
-  display: none;
+@media screen and (max-width: 767px) {
+  .authoriz__svg {
+    display: none;
+  }
 }
 
 .menu-button {
@@ -253,15 +262,21 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     padding-top: 48px;
     padding-left: 40px;
-    height: 796px;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .mobile__modal.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) {
@@ -275,11 +290,6 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 27px 0 0 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .mobile__modal {
     padding: 0;
   }
 }
@@ -365,6 +375,9 @@ header {
   .nav__site .nav__item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .nav__link--current {
+    color: var(--accent-color);
+  }
 }
 @media screen and (min-width: 768px) {
   .nav__link--current {
@@ -401,7 +414,7 @@ header {
 
 .banner {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -410,8 +423,8 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/adaptive/banner-s_@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/adaptive/banner-s_@1x.jpg);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .banner {
@@ -421,8 +434,8 @@ header {
 }
 @media screen and (min-width: 481px) {
   .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/adaptive/banner-m_@1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/adaptive/banner-m_@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/adaptive/banner-m_@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/adaptive/banner-m_@1x.jpg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
@@ -433,8 +446,8 @@ header {
 }
 @media screen and (min-width: 769px) {
   .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/adaptive/banner-l_@1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/adaptive/banner-l_@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/adaptive/banner-l_@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/adaptive/banner-l_@1x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
@@ -443,10 +456,19 @@ header {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/adaptive/banner-l_@2x.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .banner {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .banner__title {
   max-width: 696px;
-  margin: 30px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   text-align: center;
   color: #fff;
   font-weight: 900;
@@ -456,13 +478,11 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .banner__title {
     max-width: 360px;
-    margin: 0 auto;
     font-size: 26px;
     line-height: 1.62;
-    letter-spacing: 0.06em;
   }
 }
 
@@ -755,13 +775,17 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
@@ -773,7 +797,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .features__item {
-    width: calc((100% - 90px) / 4);
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
     margin-right: 30px;
   }
   .features__item:last-child {
@@ -818,10 +843,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .work {
     display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .work {
     padding-bottom: 94px;
   }
 }
@@ -947,10 +968,14 @@ textarea {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .team__item {
     padding-bottom: 24px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1113,7 +1138,6 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   background-color: inherit;
-  width: 450px;
   height: 50px;
   margin-top: 20px;
   padding-top: 15px;
@@ -1130,6 +1154,11 @@ textarea {
           align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__flex {
