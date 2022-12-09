@@ -31,7 +31,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80px;
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 0;
+  }
+  @media screen and (min-width: 768px) {
+    min-height: 80px;
+  }
 
   &__modal {
     background-color: #fff;
